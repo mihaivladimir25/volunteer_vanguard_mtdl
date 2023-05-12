@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/deployButton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/meniu2"
+        android:contentDescription="Deploy Button" />
+
+    <TextView
+        android:id="@+id/event_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/event_points_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Event Points"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/event_description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Event Description"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_width="380dp"
+        android:layout_height="67dp"
+        android:text="Apply" />
+
+    <TextView
+        android:id="@+id/applied_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text=""
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/finish_confirmation_button"
+        android:layout_width="379dp"
+        android:layout_height="69dp"
+        android:text="Finish Confirmation"
+        android:visibility="invisible" />
+
+</LinearLayout>

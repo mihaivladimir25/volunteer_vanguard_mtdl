@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">proiect_voluntariat</string>
+    <string name="points_balance">Points balance: %d</string>
+</resources>

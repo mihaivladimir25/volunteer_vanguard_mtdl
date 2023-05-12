@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".PrintActivity">
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="130dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/textViewData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-124dp"
+        android:background="@drawable/gradient"
+        android:text="Change"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>

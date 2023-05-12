@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Card2Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imag2" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:padding="16dp"
+        android:text="Big Help Out calls for more volunteering after almost 6mn participate on big day"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:text="Yesterday’s Big Help Out saw some 6 million give up their time through volunteering, according to the organisers. They are now calling for the Big Help Out to become a regular event, and for people to sign up to other upcoming volunteering opportunities including Volunteers’ Week, and Thank You Day.
+
+Polling for the Big Help Out suggests that around 6 million took part on the Coronation bank holiday Monday, including the Prince and Princess of Wales and their children, who volunteered with 3rd Upton Scouts, renovating their meeting place. 55,123 events were scheduled to take place around the UK, organised by 33,228 organisations."
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</RelativeLayout>
