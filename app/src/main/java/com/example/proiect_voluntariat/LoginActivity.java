@@ -13,10 +13,11 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public int loginResult;
     EditText edUsername, edPassword;
     Button btn;
     TextView tv, tv2;
-    private Database db;
+    public Database db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         tv = findViewById(R.id.textRegister);
         tv2 = findViewById(R.id.textForgot);
         db = new Database(getApplicationContext(), "proiect_voluntariat", null, 1);
+        loginResult = 0;
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
                 } else if (db.login(username, password) == 2) {
                     Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(LoginActivity.this, AdminsActivity.class));
-                    finish(); // Add this line to remove LoginAdminActivity from the back stack
+                    finish();
                 } else if (db.login(username, password) == 3){
                     Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, HomeBenefActivity.class);
